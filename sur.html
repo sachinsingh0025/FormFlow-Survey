@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormFlow Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="survey-container">
+        <form class="survey-form">
+            <h2 class="form-title">FormFlow Survey</h2>
+            <p class="form-description">Please fill out this form based on your feedback to improve us.</p>
+
+            <div class="progress-bar">
+                <span class="progress-text">0% Complete</span>
+            </div>
+
+            <section class="form-section">
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Sachin Singh">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="sachinsingh.306011@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder=" Kachhiyana mohal, KNP">
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h3>Your Preferences</h3>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                        <label><input type="radio" name="gender" value="prefer-not-to-say"> Prefer not to say</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Interests <small>(Select all that apply)</small></label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interest" value="sports"> Sports</label>
+                        <label><input type="checkbox" name="interest" value="music"> Music</label>
+                        <label><input type="checkbox" name="interest" value="reading"> Reading</label>
+                        <label><input type="checkbox" name="interest" value="travel"> Travel</label>
+                        <label><input type="checkbox" name="interest" value="technology"> Technology</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Satisfaction Level</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="satisfaction" value="very-satisfied"> Very Satisfied</label>
+                        <label><input type="radio" name="satisfaction" value="satisfied"> Satisfied</label>
+                        <label><input type="radio" name="satisfaction" value="neutral"> Neutral</label>
+                        <label><input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied</label>
+                        <label><input type="radio" name="satisfaction" value="very-dissatisfied"> Very Dissatisfied</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h3>Feedback</h3>
+                <div class="form-group">
+                    <label for="openEndedFeedback">Open-ended Feedback</label>
+                    <textarea id="openEndedFeedback" name="openEndedFeedback" rows="5" placeholder="Tell us what you think..."></textarea>
+                    <small>Your feedback helps us improve. (Min 200 characters)</small>
+                </div>
+                <div class="form-group checkbox-group">
+                    <label><input type="checkbox" name="copyFeedback"> Copy my feedback</label>
+                </div>
+            </section>
+
+            <button type="submit" class="submit-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.5.5 0 0 1-.923.003L6.147 8.01A.5.5 0 0 1 6 7.5V1.5A.5.5 0 0 1 6.5 1h9A.5.5 0 0 1 15.854.146ZM.146 15.854a.5.5 0 0 1 .54-.11l14.547-5.819a.5.5 0 0 1 .003-.923L8.01 6.147A.5.5 0 0 1 7.5 6H1.5A.5.5 0 0 1 .146 15.854Z"/>
+                </svg>
+                Submit Survey
+            </button>
+        </form>
+        <p class="copyright">&copy; 2025 FormFlow. All rights reserved.</p>
+        <p class ="copyright"> &copy; Developed by Sachin Singh</p>
+    </div>
+</body>
+</html>

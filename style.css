@@ -1,0 +1,211 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px; /* Add some padding around the form */
+    box-sizing: border-box;
+}
+
+.survey-container {
+    background-color: #ffffff; /* White background for the form container */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 600px; /* Max width of the form */
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.survey-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.progress-bar {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #888;
+}
+
+.form-section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee; /* Subtle separator between sections */
+    padding-bottom: 20px;
+}
+
+.form-section:last-of-type {
+    border-bottom: none; /* No border for the last section */
+    padding-bottom: 0;
+}
+
+.form-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box; /* Ensures padding doesn't add to the width */
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #6a6ee0; /* A nice blue/purple on focus */
+    box-shadow: 0 0 0 3px rgba(106, 110, 224, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 80px; /* Minimum height for textarea */
+}
+
+.form-group small {
+    display: block;
+    font-size: 13px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Spacing between radio/checkbox items */
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #555;
+    cursor: pointer;
+    margin-bottom: 0; /* Override default margin-bottom from .form-group label */
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+    /* You might want to customize the appearance of radio/checkboxes for better design consistency */
+    transform: scale(1.1); /* Slightly larger checkboxes/radios */
+}
+
+.submit-button {
+    background-color: #6a6ee0; /* Blue/purple submit button */
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content; /* Make button width fit content */
+    margin: 20px auto 0 auto; /* Center the button */
+}
+
+.submit-button svg {
+    fill: white;
+    width: 18px;
+    height: 18px;
+}
+
+.submit-button:hover {
+    background-color: #555acb; /* Darker shade on hover */
+    transform: translateY(-2px);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+.copyright {
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .survey-container {
+        padding: 25px;
+        margin: 20px;
+    }
+
+    .form-title {
+        font-size: 24px;
+    }
+
+    .form-section h3 {
+        font-size: 18px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
